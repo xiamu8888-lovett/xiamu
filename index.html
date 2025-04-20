@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2022.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    span.s1 {font: 12.0px 'PingFang SC'}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="zh-CN"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="description" content="<span class="s1">专业摄影作品展示网站</span>"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta property="og:image" content="path_to_image.jpg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="twitter:card" content="summary_large_image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;<span class="s1">我的摄影作品</span>&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Schema.org<span class="s1">结构化数据标记</span> --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script type="application/ld+json"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>{</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"@context": "https://schema.org",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"@type": "Photographer",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"name": "<span class="s1">张三</span>",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"image": "path_to_image.jpg",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"sameAs": "https://www.instagram.com/username"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="styles.css"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://unpkg.com/photoswipe@5.0.0/dist/photoswipe.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://unpkg.com/photoswipe@5.0.0/dist/photoswipe-ui-default.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- <span class="s1">头部</span> --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="logo"&gt;<span class="s1">摄影师品牌</span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#"&gt;<span class="s1">首页</span>&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#portfolio"&gt;<span class="s1">作品集</span>&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#about"&gt;<span class="s1">关于我</span>&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#contact"&gt;<span class="s1">联系我们</span>&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- <span class="s1">作品集展示区</span> --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="portfolio"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;<span class="s1">作品集</span>&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="filters"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="filter-btn" data-category="portrait"&gt;<span class="s1">人像</span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="filter-btn" data-category="landscape"&gt;<span class="s1">风光</span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="filter-btn" data-category="night"&gt;<span class="s1">夜景</span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="gallery"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- <span class="s1">图片项</span> --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="gallery-item" data-category="portrait" data-exif="img1.jpg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="img1-thumb.jpg" alt="<span class="s1">作品</span>1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="info"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="title"&gt;<span class="s1">作品</span>1&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="exif"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- <span class="s1">更多图片项</span>... --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- <span class="s1">关于我</span> --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="about"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;<span class="s1">关于我</span>&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;<span class="s1">艺术家声明</span>...&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;<span class="s1">获奖经历</span>&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul class="timeline"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;2019<span class="s1">年：获得</span>XXX<span class="s1">奖项</span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;2020<span class="s1">年：获得</span>XXX<span class="s1">奖项</span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;<span class="s1">客户评价</span>&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="carousel"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="carousel-item"&gt;<span class="s1">客户评价</span>1&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="carousel-item"&gt;<span class="s1">客户评价</span>2&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- <span class="s1">联系表单</span> --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="contact"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;<span class="s1">联系我们</span>&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;form action="submit_form.php" method="POST"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="service"&gt;<span class="s1">选择服务类型</span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;select name="service" id="service"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;option value="wedding"&gt;<span class="s1">婚礼摄影</span>&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;option value="commercial"&gt;<span class="s1">商业拍摄</span>&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;option value="portrait"&gt;<span class="s1">人像摄影</span>&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="file"&gt;<span class="s1">上传参考图</span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="file" name="file" id="file"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="g-recaptcha" data-sitekey="your-site-key"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button type="submit"&gt;<span class="s1">提交</span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- <span class="s1">灯箱</span> --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="pswp__bg"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="pswp__scroll-wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="pswp__container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="pswp__item"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="pswp__item"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="pswp__item"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="pswp__ui pswp__ui--hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- UI controls here --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="scripts.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
